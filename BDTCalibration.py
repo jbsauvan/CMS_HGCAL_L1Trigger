@@ -365,7 +365,7 @@ legends[1] = 'STC4+16'
 legends[2] = 'Mixed BC + STC'
 legends[3] = 'BC Coarse 2x2 TC'
 
-## FEATURE IMPORTANCES XGBOOST
+## FEATURE IMPORTANCES GradientBoostingRegressor
 
 matplotlib.rcParams.update({'font.size': 16})
 
