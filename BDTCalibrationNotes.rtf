@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red0\green0\blue0;\red157\green32\blue111;
+\red255\green255\blue255;\red0\green0\blue0;\red242\green242\blue242;}
+{\*\expandedcolortbl;;\csgray\c95825;\csgray\c0\c85000;\cssrgb\c68606\c21579\c51071;
+\cssrgb\c100000\c100000\c99985;\cssrgb\c0\c0\c0\c85000;\cssrgb\c95931\c95931\c95811;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21420\viewh16120\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Optimization\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 \CocoaLigature0 Starting GBR for FE option:  0\
+Best Estimator learned through GridSearch\
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,\
+             learning_rate=0.1, loss='huber', max_depth=2,\
+             max_features=1.0, max_leaf_nodes=None,\
+             min_impurity_decrease=0.0, min_impurity_split=None,\
+             min_samples_leaf=3, min_samples_split=2,\
+             min_weight_fraction_leaf=0.0, n_estimators=200,\
+             n_iter_no_change=None, presort='auto', random_state=None,\
+             subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0,\
+             warm_start=False)\
+Best Estimator Parameters\
+---------------------------\
+n_estimators: 200\
+max_depth: 2\
+Learning Rate: 0.1\
+min_samples_leaf: 3\
+max_features: 1.0\
+\
+Train R-squared: 0.80\
+huber GBR train score:  0.8025375831275788\
+huber GBR test score:  0.6936647960728879\
+huber GBR MSE:  0.005635493984563486\
+ls GBR train score:  0.8837531271669316\
+ls GBR test score:  0.7006809493151529\
+ls GBR MSE:  0.005506421357961393\
+\
+\
+Starting GBR for FE option:  1\
+Best Estimator learned through GridSearch\
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,\
+             learning_rate=0.1, loss='huber', max_depth=8,\
+             max_features=0.1, max_leaf_nodes=None,\
+             min_impurity_decrease=0.0, min_impurity_split=None,\
+             min_samples_leaf=3, min_samples_split=2,\
+             min_weight_fraction_leaf=0.0, n_estimators=200,\
+             n_iter_no_change=None, presort='auto', random_state=None,\
+             subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0,\
+             warm_start=False)\
+Best Estimator Parameters\
+---------------------------\
+n_estimators: 200\
+max_depth: 8\
+Learning Rate: 0.1\
+min_samples_leaf: 3\
+max_features: 0.1\
+\
+Train R-squared: 0.56\
+huber GBR train score:  0.44568590517240425\
+huber GBR test score:  0.6388767128092012\
+huber GBR MSE:  0.007860741692026276\
+ls GBR train score:  0.5539503260570275\
+ls GBR test score:  0.691726014792627\
+ls GBR MSE:  0.0067103458958224504\
+\
+\
+Training eta calibration with xgboost\
+Starting xgboost for FE option:  0\
+XGBRegressor:\
+XGB best score:  0.5691247564966665\
+XGB best parameters:  \{'eta': 0.1, 'max_depth': 2, 'n_estimators': 200\}\
+XGB CV\
+Best params: 6, 7, 0.7, 1.0, MAE: 0.0031306\
+\
+Starting xgboost for FE option:  1\
+XGBRegressor:\
+XGB best score:  0.4381754865329356\
+XGB best parameters:  \{'eta': 0.2, 'max_depth': 2, 'n_estimators': 100\}\
+XGB CV\
+Best params: 7, 6, 0.8, 0.9, MAE: 0.0037514\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 CV with max_depth=\{\}, min_child_weight=\{\}, subsample=\{\}, colsample_bytree=\{\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 LOSS \'93ls\'94\
+Starting GBR for FE option:  0\
+Best Estimator learned through GridSearch\
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,\
+             learning_rate=0.1, loss='ls', max_depth=6, max_features=0.3,\
+             max_leaf_nodes=None, min_impurity_decrease=0.0,\
+             min_impurity_split=None, min_samples_leaf=3,\
+             min_samples_split=2, min_weight_fraction_leaf=0.0,\
+             n_estimators=100, n_iter_no_change=None, presort='auto',\
+             random_state=None, subsample=1.0, tol=0.0001,\
+             validation_fraction=0.1, verbose=0, warm_start=False)\
+Best Estimator Parameters\
+---------------------------\
+n_estimators: 100\
+max_depth: 6\
+Learning Rate: 0.1\
+min_samples_leaf: 3\
+max_features: 0.3\
+\
+Train R-squared: 0.92\
+huber GBR train score:  0.8025375831275788\
+huber GBR test score:  0.6936647960728879\
+huber GBR MSE:  0.005635493984563486\
+ls GBR train score:  0.8837531271669316\
+ls GBR test score:  0.7006809493151529\
+ls GBR MSE:  0.005506421357961393\
+\
+Starting GBR for FE option:  1\
+Best Estimator learned through GridSearch\
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,\
+             learning_rate=0.05, loss='ls', max_depth=8, max_features=0.7,\
+             max_leaf_nodes=None, min_impurity_decrease=0.0,\
+             min_impurity_split=None, min_samples_leaf=3,\
+             min_samples_split=2, min_weight_fraction_leaf=0.0,\
+             n_estimators=10, n_iter_no_change=None, presort='auto',\
+             random_state=None, subsample=1.0, tol=0.0001,\
+             validation_fraction=0.1, verbose=0, warm_start=False)\
+Best Estimator Parameters\
+---------------------------\
+n_estimators: 10\
+max_depth: 8\
+Learning Rate: 0.1\
+min_samples_leaf: 3\
+max_features: 0.7\
+\
+Train R-squared: 0.40\
+huber GBR train score:  0.44568590517240425\
+huber GBR test score:  0.6388767128092012\
+huber GBR MSE:  0.007860741692026276\
+ls GBR train score:  0.5539503260570275\
+ls GBR test score:  0.691726014792627\
+ls GBR MSE:  0.0067103458958224504\
+\
+Training eta calibration with xgboost\
+With XGBRegressor ??\
+XGB best score:  0.511080797303227\
+XGB best parameters:  \{'eta': 0.1, 'max_depth': 2, 'n_estimators': 200\}\
+XGB CV\
+Best params: 5, 2, 0.9, 0.9, MAE: 0.0358326\
+\
+Starting xgboost for FE option:  1\
+XGB best score:  0.4381754865329356\
+XGB best parameters:  \{'eta': 0.2, 'max_depth': 2, 'n_estimators': 100\}\
+XGB CV\
+Best params: 5, 2, 1.0, 0.9, MAE: 0.0381606\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 CV with max_depth=\{\}, min_child_weight=\{\}, subsample=\{\}, colsample_bytree=\{\}\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97 TUNING FOR ETA (xgboost) \'97\'97\'97\'97\'97\'97\'97\
+\
+\cf5 \cb6 \ul \ulc5 loss = huber\cf4 \cb3 \ulnone \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 Starting xgboost for FE option:  0\cf4 \
+\cf2 Hyperparameters xgboost:  \{'nthread': 10, 'eta': 0.2, 'silent': True, 'objective': 'reg:pseudohubererror', 'n_estimators': 200, 'eval_metric': 'mphe', 'max_depth': 6, 'subsample': 0.7, 'colsample_bytree': 1.0, 'min_child_weight': 7\}\
+\
+XGB best score:  0.7327829758352058\
+XGB best parameters:  \{'eta': 0.1, 'max_depth': 8, 'n_estimators': 50\}\
+\
+CV \
+Best params: 0.1, MAE: 0.002719\
+\
+Starting xgboost for FE option:  1\
+Hyperparameters xgboost:  \{'nthread': 10, 'eta': 0.2, 'silent': True, 'objective': 'reg:pseudohubererror', 'n_estimators': 100, 'eval_metric': 'mphe', 'max_depth': 7, 'subsample': 0.8, 'colsample_bytree': 0.9, 'min_child_weight': 6\}\
+\
+XGB best score:  0.4381754865329356\
+\
+XGB best parameters:  \{'eta': 0.2, 'max_depth': 2, 'n_estimators': 100\}\
+CV \
+Best params: 0.3, MAE: 0.0037514\
+\
+\cf7 \cb6 \ul \ulc7 loss = ls\cf2 \cb3 \ulnone \
+algo 0 - Best params: 0.1, MAE: 0.037116\
+algo 1 - Best params: 0.1, MAE: 0.0409602\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+}
