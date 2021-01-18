@@ -1,3 +1,3 @@
 # CMSHGCALLevel1
 
-Work in progress
+General pre-processing and post-processing scripts used for L1 HGCAL clusters studies done in 2019.
